@@ -5,6 +5,7 @@ const serve = require('rollup-plugin-serve');
 const configList = require('./rollup.config');
 
 const resolveFile = function(filePath) {
+  console.log('1',__dirname,filePath)
   return path.join(__dirname, '..', filePath)
 }
 const PORT = 3000;

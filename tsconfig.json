@@ -2,7 +2,7 @@
   "compilerOptions": {
     "sourceMap": true,
     "moduleResolution": "node",
-    "target": "es2015",
+    "target": "es5",
     "lib": ["es6", "dom", "es2017"],
     // "jsx": "react",
     // "types": ["node"],
@@ -14,7 +14,6 @@
     "outDir": "./",
     "noUnusedParameters": true,
     "noUnusedLocals": true,
-    "importHelpers":false,
     "resolveJsonModule": true,
     "paths": {
       "@/*": ["src/*"]

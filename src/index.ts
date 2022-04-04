@@ -1,14 +1,14 @@
-export default async function (n: number) {
-  while (--n) {
-    await delay(10, n);
-  }
-}
-
-function delay(interval: number, num: number) {
+const delay = (interval, num) => {
   return new Promise((resolve) =>
     setTimeout(() => {
       console.log(num);
-      resolve();
+      resolve(1);
     }, interval)
   );
-}
+};
+
+export default async (n) => {
+  while (--n) {
+    await delay(1000, n);
+  }
+};
